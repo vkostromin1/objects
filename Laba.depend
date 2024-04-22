@@ -1,0 +1,39 @@
+# depslib dependency file v1.0
+1711622784 source:c:\users\student\desktop\Черников_Малков\laba\main.cpp
+	<iostream>
+	"header.h"
+	<string>
+
+1711623276 c:\users\student\desktop\Черников_Малков\laba\header.h
+	<string>
+
+1711623719 source:c:\users\student\desktop\Черников_Малков\laba\main2.cpp
+	<iostream>
+	"header.h"
+	<string>
+
+1714401460 source:c:\users\vadim\desktop\Черников_Малков\laba\main2.cpp
+
+1714401471 source:c:\users\vadim\desktop\Черников_Малков\laba\main.cpp
+	<iostream>
+	"header.h"
+	<string>
+
+1714401681 c:\users\vadim\desktop\Черников_Малков\laba\header.h
+	<string>
+
+1714402535 source:c:\users\vadim\desktop\objects\objects\main2.cpp
+
+1714473415 source:c:\users\vadim\desktop\objects\objects\main.cpp
+	<iostream>
+	<list>
+	"header.h"
+	<string>
+
+1714471493 c:\users\vadim\desktop\objects\objects\header.h
+	<string>
+	<vector>
+	"decorators.h"
+
+1714467484 c:\users\vadim\desktop\objects\objects\decorators.h
+
