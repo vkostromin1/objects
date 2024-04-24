@@ -35,4 +35,3 @@ public:
     Type GetCurrent() const { return Decorator->GetCurrent(); }
 
 };
-#endif
