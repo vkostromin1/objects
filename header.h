@@ -176,4 +176,91 @@ public:
     };
 };
 
+class HelicopterTypeDecorator : public IteratorDecorator<HeliPtr>
+{
+private:
+    HelicopterType HeliType;
+public:
+    HelicopterTypeDecorator(Iterator<HeliPtr> *Iterator, HelicopterType helitype) : IteratorDecorator(Iterator)
+    {
+        HeliType = helitype ;
+    }
+
+    void First()
+    {
+        Decorator->First();
+        while (!Decorator->IsDone()&& Decorator->GetCurrent()->GetType()!=HeliType)
+        {
+            Decorator->Next();
+        }
+    }
+
+    void Next()
+    {
+        do
+        {
+            Decorator->Next();
+        }
+        while(!Decorator->IsDone()&&Decorator->GetCurrent()->GetType()!= HeliType);
+    }
+};
+
+class HelicopterColorDecorator : public IteratorDecorator<HeliPtr>
+{
+private:
+    HelicopterColor HeliColor;
+public:
+    HelicopterColorDecorator(Iterator<HeliPtr> *Iterator, HelicopterColor helicolor) : IteratorDecorator(Iterator)
+    {
+        HeliColor = helicolor ;
+    }
+
+    void First()
+    {
+        Decorator->First();
+        while (!Decorator->IsDone()&& Decorator->GetCurrent()->GetColor()!=HeliColor)
+        {
+            Decorator->Next();
+        }
+    }
+
+    void Next()
+    {
+        do
+        {
+            Decorator->Next();
+        }
+        while(!Decorator->IsDone()&&Decorator->GetCurrent()->GetColor()!= HeliColor);
+    }
+};
+
+class HelicopterSpeedDecorator : public IteratorDecorator<HeliPtr>
+{
+private:
+    HelicopterSpeed HeliSpeed;
+public:
+    HelicopterSpeedDecorator(Iterator<HeliPtr> *Iterator, HelicopterSpeed helispeed) : IteratorDecorator(Iterator)
+    {
+        HeliSpeed = helispeed ;
+    }
+
+    void First()
+    {
+        Decorator->First();
+        while (!Decorator->IsDone()&& Decorator->GetCurrent()->GetSpeed()!=HeliSpeed)
+        {
+            Decorator->Next();
+        }
+    }
+
+    void Next()
+    {
+        do
+        {
+            Decorator->Next();
+        }
+        while(!Decorator->IsDone()&&Decorator->GetCurrent()->GetSpeed()!= HeliSpeed);
+    }
+};
+
 #endif
