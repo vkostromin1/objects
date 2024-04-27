@@ -24,13 +24,13 @@
 
 1714402535 source:c:\users\vadim\desktop\objects\objects\main2.cpp
 
-1713973867 source:c:\users\vadim\desktop\objects\objects\main.cpp
+1714207556 source:c:\users\vadim\desktop\objects\objects\main.cpp
 	<iostream>
 	<list>
 	"header.h"
 	<string>
 
-1713973847 c:\users\vadim\desktop\objects\objects\header.h
+1713974106 c:\users\vadim\desktop\objects\objects\header.h
 	<string>
 	<vector>
 	"decorators.h"
