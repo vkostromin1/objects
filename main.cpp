@@ -74,15 +74,17 @@ int main(){
 
     for (int i=0; i < rand()%100+1000; i++)
     {
-        FirstCont.AddHeli(Create_new_helicopter(static_cast<HelicopterType>(rand()%(4)+1)));
+        FirstCont.AddHeli(Create_new_helicopter(static_cast<HelicopterType>(rand()%(3)+1)));
     }
     wcout << L"В первом контейнере: " << FirstCont.GetCount() << L" элемента/элементов" << endl ;
     for (int i=0; i < rand()%100+1000; i++)
     {
-        SecondCont.AddHeli(Create_new_helicopter(static_cast<HelicopterType>(rand()%(4)+1));
+        SecondCont.AddHeli(Create_new_helicopter(static_cast<HelicopterType>(rand()%(3)+1));
     }
     wcout << L"Во втором контейнере: " << SecondCont.GetCount() << L" элемента/элементов" << endl;
     return 0;
+    Iterator<HeliPtr> *Iterator = new HelicopterTypeDecorator (SecondCont.GetIterator(), HelicopterType::PassHeli);
+    task1(Iterator);
 }
 }
 
