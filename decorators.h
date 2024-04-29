@@ -1,7 +1,6 @@
 #ifndef DEC_H_INCLUDED
 #define DEC_H_INCLUDED
 
-
 template<class Type>
 class Iterator
 {
@@ -33,5 +32,6 @@ public:
     void Next() { Decorator->Next(); }
     bool IsDone() const { return Decorator->IsDone(); }
     Type GetCurrent() const { return Decorator->GetCurrent(); }
-
 };
+
+#endif
